@@ -1,0 +1,52 @@
+@import url(https://fonts.google.com/share?selection.family=Protest+Riot);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Protest+Riot", "Lucida Sans", "Lucida Sans Regular",
+    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.navbar {
+  font-size: 1em;
+  background: #094e9e71;
+  border: 4px solid #0d1633;
+}
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
+.nav-links,
+.logo {
+  text-decoration: none;
+  color: #19295f;
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+  border-bottom: 2px solid black;
+}
+.main-nav li ul {
+  border-bottom: 1px solid #0e0f0f71;
+}
+.logo {
+  display: inline-block;
+  font-size: 1.4em;
+  margin: 25px 0 5px 30px;
+}
+.material-symbols-outlined {
+  background-color: #094f9e3d;
+  position: absolute;
+  top: 30px;
+  right: 25px;
+  cursor: pointer;
+  font-size: 1.4em;
+}
+#chkToggle {
+  display: none;
+}
+input:checked + ul .main-nav {
+  display: block;
+}
